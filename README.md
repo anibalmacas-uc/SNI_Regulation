@@ -152,7 +152,7 @@ Matriz_Ener_08_05_2026/
 
 ### **Paso 1: Clonar/Navegar al proyecto**
 ```bash
-cd /home/josssseph/Documents/Tenth_Semester/Regulation/Matriz_Ener_08_05_2026
+cd /your_home/SNI_Regulation
 ```
 
 ### **Paso 2: Crear entorno virtual**
@@ -171,7 +171,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-La aplicación se abrirá en `http://localhost:8501`
+La aplicación se abrirá en **`http://localhost:8501`**
 
 ---
 
@@ -346,10 +346,12 @@ Información basada en datos públicos del SNI Ecuador.
 
 ---
 
-## ✨ Autor
+## ✨ Autores
 
-**Ingeniero de Sistemas de Potencia**  
-Desarrollador Senior Python  
+**Grupo 5 - Pablo Cárdenas, Joseph Jaramillo, Anibal Macas & Anthony Pallchisaca**
+**Ingenieria en Telecomunicaciones**
+**Universidad de Cuenca**
+Desarrolladores Senior Python  
 Sistema Nacional Interconectado (SNI) - Ecuador  
 
 **Fecha**: Abril 2026  
