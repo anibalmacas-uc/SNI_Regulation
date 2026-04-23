@@ -1,0 +1,16 @@
+# Entorno virtual
+venv/
+env/
+ENV/
+
+# Archivos de caché de Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración local (si los hay)
+*.local
