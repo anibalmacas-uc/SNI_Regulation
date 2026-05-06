@@ -7,7 +7,7 @@
 
 ---
 
-## 📦 Entregables
+## Entregables
 
 ### 1️⃣ **Código Fuente - Modular y Documentado**
 
@@ -55,16 +55,16 @@
 
 ---
 
-## ✨ Características Implementadas
+## Características Implementadas
 
-### ⚡ Módulo 1: Interfaz de Usuario
+### Módulo 1: Interfaz de Usuario
 - ✅ Sliders intuitivos (Demanda ±30%, ±500 MW)
 - ✅ Toggles de control (Hidro, Térmica, Renovable)
 - ✅ Formulario de nueva central con validación WGS84
 - ✅ 6 tarjetas KPI en tiempo real
 - ✅ Controles laterales organizados y responsivos
 
-### 🗺️ Módulo 2: Mapa Interactivo
+### Módulo 2: Mapa Interactivo
 - ✅ Mapa base de Ecuador (Folium + OpenStreetMap)
 - ✅ 15 marcadores dinámicos con actualizaciones en tiempo real
 - ✅ Codificación de color por tipo de central
@@ -73,7 +73,7 @@
 - ✅ Leyenda integrada
 - ✅ Zonas afectadas resaltadas en rojo
 
-### 📈 Módulo 3: Motor de Gráficos
+### Módulo 3: Motor de Gráficos
 - ✅ **Interpolación cúbica suave** (SciPy CubicSpline)
 - ✅ Curva de generación vs demanda 24h
 - ✅ Resolución de 15 minutos (96 puntos/día)
@@ -82,7 +82,7 @@
 - ✅ Gráfico de composición (pie chart)
 - ✅ Línea de hora actual (timestamp)
 
-### 🆘 Módulo 4: UFLS y Seguridad
+### Módulo 4: UFLS y Seguridad
 - ✅ **Esquema UFLS en cascada**:
   - Etapa 1 (59.5 Hz): 5% desconexión
   - Etapa 2 (59.3 Hz): 10% desconexión
@@ -99,7 +99,7 @@
 
 ---
 
-## 🎯 Resultados Técnicos
+## Resultados Técnicos
 
 ### **Validación de Código**
 ```
@@ -127,7 +127,7 @@
 
 ---
 
-## 📊 Datos Base
+## Datos Base
 
 ### **Generación Instalada: 10,955 MW**
 
@@ -153,7 +153,7 @@
 
 ---
 
-## 🚀 Cómo Usar
+## Cómo Usar
 
 ### **Opción 1: Inicio Automático (Recomendado)**
 ```bash
@@ -182,30 +182,30 @@ streamlit run app.py
 
 ---
 
-## 📋 Módulos de la Aplicación
+## Módulos de la Aplicación
 
-### **Tab 1: Dashboard Principal** 📊
+### **Tab 1: Dashboard Principal** 
 - Selector de hora (slider 24h)
 - 6 KPIs en tarjetas
 - Gráfico de composición de generación
 - Gráfico de Gen vs Dem con déficit
 - Panel de información
 
-### **Tab 2: Mapa Interactivo** 🗺️
+### **Tab 2: Mapa Interactivo** 
 - Mapa de Ecuador con 15 centrales
 - Marcadores dinámicos (color/estado)
 - Zonas afectadas por UFLS
 - Tabla de detalles de plantas
 - Información de cada central
 
-### **Tab 3: Análisis Detallado** 📈
+### **Tab 3: Análisis Detallado** 
 - Curva 24h (demanda vs generación)
 - Estadísticas de demanda
 - Factor de carga
 - Impacto económico en USD
 - Brechas identificadas
 
-### **Tab 4: Seguridad & UFLS** 🆘
+### **Tab 4: Seguridad & UFLS** 
 - Indicador de riesgo (semáforo)
 - Factores de riesgo identificados
 - Acciones recomendadas
@@ -215,7 +215,7 @@ streamlit run app.py
 
 ---
 
-## 🔬 Modelos Físicos Implementados
+## Modelos Físicos Implementados
 
 ### **Ecuación de Frecuencia**
 ```
@@ -241,7 +241,7 @@ f ≤ 59.0 Hz          | 3     | 15%                  | + Sur
 
 ---
 
-## 💡 Casos de Uso
+## Casos de Uso
 
 ### **Escenario 1: Funcionamiento Normal**
 - Hora: 12:00
@@ -329,7 +329,7 @@ f ≤ 59.0 Hz          | 3     | 15%                  | + Sur
 
 ---
 
-## 🎓 Conocimientos Implementados
+## Conocimientos Implementados
 
 ### **Ingeniería de Sistemas de Potencia**
 - ✅ Ecuaciones de swing del sistema
@@ -360,7 +360,7 @@ f ≤ 59.0 Hz          | 3     | 15%                  | + Sur
 
 ---
 
-## 🚀 Próximos Pasos (Opcionales)
+## Próximos Pasos (Opcionales)
 
 1. **Integración en Tiempo Real**:
    - Conectar API de CENACE
@@ -384,11 +384,11 @@ f ≤ 59.0 Hz          | 3     | 15%                  | + Sur
 
 ---
 
-## 🎯 Conclusión
+## Conclusión
 
 El **Simulador del SNI Ecuador** es una **aplicación completa, funcional y lista para producción** que simula realista y dinámicamente el Sistema Nacional Interconectado.
 
-### ✨ Destacados
+### Destacados
 - ✅ **100% de requisitos implementados**
 - ✅ **Código modular y mantenible**
 - ✅ **Documentación exhaustiva**
@@ -397,7 +397,7 @@ El **Simulador del SNI Ecuador** es una **aplicación completa, funcional y list
 - ✅ **Interfaz intuitiva y responsiva**
 - ✅ **Listo para ejecutar en 2 minutos**
 
-### 📦 Entrega
+### Entrega
 - 8 módulos Python
 - 4 documentos de referencia
 - 2 scripts de automatización
@@ -405,13 +405,4 @@ El **Simulador del SNI Ecuador** es una **aplicación completa, funcional y list
 - 5 zonas del SNI
 - 96 puntos de datos diarios
 
-**Estado**: ✅ **PRODUCCIÓN**
-
----
-
-**Desarrollado por**: Ingeniero de Sistemas de Potencia  
-**Stack**: Streamlit + Plotly + Folium + Python  
-**Versión**: 1.0.0  
-**Fecha**: Abril 2026  
-
-🎉 **¡Proyecto Completado Exitosamente!** 🎉
+**Estado**: **PRODUCCIÓN**

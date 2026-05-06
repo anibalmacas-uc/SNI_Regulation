@@ -36,7 +36,6 @@ TIME_RESOLUTION = int(SIMULATION_HOURS / SIMULATION_TIMESTEP)
 
 # Frecuencia de actualización de cálculos
 FREQUENCY_DECAY_RATE = 0.01  # Hz/s cuando hay déficit
-
 # ============ ESQUEMA UFLS (Under Frequency Load Shedding) ============
 UFLS_STAGES = {
     1: {"frequency": 59.5, "load_shed_percent": 5, "zones": ["Zona Norte", "Zona Oriente"]},

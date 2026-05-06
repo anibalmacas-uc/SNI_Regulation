@@ -1,6 +1,5 @@
 ╔═══════════════════════════════════════════════════════════════════╗
-║          ⚡ SNI ECUADOR - SIMULADOR DE SISTEMA DE POTENCIA ⚡      ║
-║                    PROYECTO COMPLETADO ✅                           ║
+║           SNI ECUADOR - SIMULADOR DE SISTEMA DE POTENCIA          ║
 ╚═══════════════════════════════════════════════════════════════════╝
 
 📦 DELIVERABLES TOTALES

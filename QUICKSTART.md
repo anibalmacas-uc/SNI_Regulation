@@ -1,6 +1,6 @@
 # 🎯 Guía Rápida - SNI Ecuador Simulator
 
-## ⚡ Inicio Rápido (2 minutos)
+## Inicio Rápido (2 minutos)
 
 ### Linux/macOS
 ```bash

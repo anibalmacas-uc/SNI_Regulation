@@ -1,4 +1,4 @@
-# ⚡ Simulador del Sistema Nacional Interconectado (SNI) - Ecuador
+# Simulador del Sistema Nacional Interconectado (SNI) - Ecuador
 
 ## 📋 Descripción General
 

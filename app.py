@@ -33,7 +33,6 @@ from streamlit_folium import st_folium
 # ============ CONFIGURACIÓN DE PÁGINA ============
 st.set_page_config(
     page_title="SNI Ecuador - Simulador",
-    page_icon="⚡",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -206,7 +205,7 @@ def simulate_system_state(hour, demand_adjustment_percent=0, demand_adjustment_m
 col_title1, col_title2 = st.columns([3, 1])
 
 with col_title1:
-    st.markdown('<div class="title-main">⚡ SNI Ecuador - Simulador de Sistema de Potencia</div>', 
+    st.markdown('<div class="title-main">SNI Ecuador - Simulador de Sistema de Potencia</div>', 
                 unsafe_allow_html=True)
     st.markdown('<div class="subtitle">Demanda máxima histórica: Martes, 14 de abril de 2026 (~5000 MW)</div>', 
                 unsafe_allow_html=True)
@@ -246,10 +245,10 @@ for _, plant in st.session_state.plants_data.iterrows():
 
 # ============ SECCIONES PRINCIPALES ============
 tab1, tab2, tab3, tab4 = st.tabs([
-    "📊 Dashboard Principal", 
-    "🗺️ Mapa Interactivo", 
-    "📈 Análisis Detallado",
-    "🆘 Seguridad & UFLS"
+    "Dashboard Principal", 
+    "Mapa Interactivo", 
+    "Análisis Detallado",
+    "Seguridad & UFLS"
 ])
 
 # ============ TAB 1: DASHBOARD PRINCIPAL ============
@@ -273,7 +272,7 @@ with tab1:
     with col_time2:
         hour_int = int(simulation_hour)
         hour_min = int((simulation_hour - hour_int) * 60)
-        st.info(f"⏰ {hour_int:02d}:{hour_min:02d}")
+        st.info(f"{hour_int:02d}:{hour_min:02d}")
     
     st.divider()
     
@@ -347,7 +346,7 @@ with tab1:
 # ============ TAB 2: MAPA INTERACTIVO ============
 with tab2:
     
-    st.markdown("### 🗺️ Ubicación de Centrales del SNI")
+    st.markdown("### Ubicación de Centrales del SNI")
     st.info("""
     - **Azul**: Hidroeléctrica
     - **Naranja**: Térmica  
@@ -381,7 +380,7 @@ with tab2:
     st.markdown("---")
     
     # Tabla de plantas
-    st.markdown("### 📋 Detalle de Centrales")
+    st.markdown("### Detalle de Centrales")
     
     df_display = df_plants_display[[
         'name', 'type', 'capacity_mw', 'latitude', 'longitude', 'status'
@@ -413,7 +412,7 @@ with tab2:
 # ============ TAB 3: ANÁLISIS DETALLADO ============
 with tab3:
     
-    st.markdown("### 📈 Análisis Temporal (24 horas)")
+    st.markdown("###Análisis Temporal (24 horas)")
     
     # Generar curva 24h con condiciones actuales
     hours = st.session_state.demand_hours_24h
@@ -455,7 +454,7 @@ with tab3:
     st.divider()
     
     # Tabla de costos económicos
-    st.markdown("#### 💰 Impacto Económico")
+    st.markdown("####Impacto Económico")
     
     if system_state['deficit'] > 0:
         hourly_loss = EconomicImpactCalculator.calculate_deficit_loss(
@@ -471,13 +470,13 @@ with tab3:
         **Pérdidas económicas 24h**: ${hourly_loss * 24:,.0f} USD
         """)
     else:
-        st.success("✅ No hay déficit de generación - Sistema en balance")
+        st.success("No hay déficit de generación - Sistema en balance")
 
 
 # ============ TAB 4: SEGURIDAD & UFLS ============
 with tab4:
     
-    st.markdown("### 🆘 Estabilidad del Sistema y Esquema UFLS")
+    st.markdown("### Estabilidad del Sistema y Esquema UFLS")
     
     # Mostrar estado de riesgo
     risk_level = system_state['risk_assessment']['risk_level']
@@ -557,7 +556,7 @@ with tab4:
             """)
     
     else:
-        st.success("✅ UFLS inactivo - Sistema en operación normal")
+        st.success("UFLS inactivo - Sistema en operación normal")
     
     st.divider()
     
@@ -596,13 +595,12 @@ st.divider()
 col_footer1, col_footer2, col_footer3 = st.columns(3)
 
 with col_footer1:
-    st.caption("📊 **Simulador SNI Ecuador**")
-    st.caption("Ingeniero de Sistemas de Potencia")
+    st.caption("**Simulador SNI Ecuador**")
 
 with col_footer2:
-    st.caption(f"⏰ Simulación: {int(simulation_hour):02d}:{int((simulation_hour % 1) * 60):02d}")
-    st.caption(f"🔄 Última actualización: {datetime.now().strftime('%H:%M:%S')}")
+    st.caption(f"Simulación: {int(simulation_hour):02d}:{int((simulation_hour % 1) * 60):02d}")
+    st.caption(f"Última actualización: {datetime.now().strftime('%H:%M:%S')}")
 
 with col_footer3:
     st.caption("Sistema Nacional Interconectado (SNI)")
-    st.caption("Repúblic del Ecuador")
+    st.caption("República del Ecuador")

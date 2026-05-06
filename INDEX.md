@@ -75,7 +75,7 @@
 
 ---
 
-## ⚡ Inicio Rápido
+## Inicio Rápido
 
 ### Opción 1: Script Automático
 ```bash

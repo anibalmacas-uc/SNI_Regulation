@@ -227,10 +227,10 @@ class DashboardComponents:
     def render_control_panel():
         """Panel de controles de simulación"""
         
-        st.sidebar.markdown("## ⚙️ Controles del Sistema")
+        st.sidebar.markdown("## Controles del Sistema")
         
         # Controles de generación
-        st.sidebar.markdown("### 🔌 Estado de Centrales")
+        st.sidebar.markdown("### Estado de Centrales")
         
         hydroelectric_enabled = st.sidebar.toggle(
             "Hidroeléctrica",
@@ -251,7 +251,7 @@ class DashboardComponents:
         )
         
         # Ajuste de demanda
-        st.sidebar.markdown("### 📊 Ajuste de Demanda")
+        st.sidebar.markdown("### Ajuste de Demanda")
         
         demand_adjustment = st.sidebar.slider(
             "Cambio de Demanda (%)",
@@ -306,7 +306,7 @@ class DashboardComponents:
                 key="new_plant_lon"
             )
             
-            add_plant_btn = st.button("✨ Agregar Central", key="add_plant")
+            add_plant_btn = st.button("Agregar Central", key="add_plant")
         
         return {
             'hydroelectric_enabled': hydroelectric_enabled,
